@@ -1,19 +1,17 @@
-import Section from "../components/Section";
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-const HomePage = () => {
-  return (
-    <>
-      {
-        data.map((item, index) => 
-          <Section key={index+1} data={item} />
-        )
-      }    
-    </>
-  )
-  
+type Data = {
+  data: Object
 }
 
-export default HomePage;
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
+  res.status(200).json({ data });
+}
+
 
 const data = [
   {
@@ -36,28 +34,15 @@ const data = [
   {
     model: "Model S",
     imgUrl: ["model-s.webp", "model-s-mobile.webp"],
-    btn_top: "En savoir plus",
+    btn_top: "Véhicules disponibles",
     btn_bottom: "Configuration personnalisée",
   },
   {
     model: "Model X",
     imgUrl: ["model-x.webp", "model-x-mobile.webp"],
     
-    btn_top: "En savoir plus",
+    btn_top: "Véhicules disponibles",
     btn_bottom: "Configuration personnalisée",
-  },
-  {
-    model: "Systèmes d'énergie solaire et Powerwalls",
-    imgUrl: ["garage.jfif", "garage-mobile.jfif"],
-    text: "De l’énergie pour tous vos besoins",
-    
-    btn_top: "En savoir plus"
-  },
-  {
-    model: "Accessoires",
-    imgUrl: ["charge.jfif", "charge-mobile.jfif"],
-    
-    btn_top: "En savoir plus"
   }
 ]
 
