@@ -16,6 +16,9 @@ const Header = () => {
     const closeMenu = () => {
         setShow(false);
     }
+
+    console.log(show);
+    
     return (
         <header className="container-fluid w-full z-50 fixed bg-transparent h-14 flex items-center justify-center">
             <div className="w-11/12 flex justify-between items-center h-full">

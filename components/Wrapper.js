@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { TfiAngleDown } from 'react-icons/tfi';
 
-const Wrapper = ({infosCar}: { infosCar: Object }) => {
+const Wrapper = ({infosCar}) => {
 
     return (
         <motion.div className="w-full  h-full pt-36 pb-5 flex flex-col justify-between items-center">

@@ -17,7 +17,7 @@ const NavbarHidden = ({closeMenu}:{closeMenu: Function}) => {
               <Link href={"#"+idx} key={idx+1} className="px-2 text-md text-slate-600 font-medium">{ item }</Link>   
           )
         } 
-        <button className="absolute top-8 right-5 rounded-sm bg-transparent px-2 text-xl font-bold " onClick={closeMenu}><AiOutlineClose /></button>     
+        <button className="absolute top-8 right-5 rounded-sm bg-transparent px-2 text-xl font-bold " onClick={() => closeMenu()}><AiOutlineClose /></button>     
     </nav>
   )
 }

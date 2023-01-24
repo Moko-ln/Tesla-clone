@@ -8,7 +8,7 @@ const NavbarLeft = ({openMenu}:{openMenu: Function}) => {
               <Link href={"#"+idx} key={idx+1} className="px-2 text-sm font-medium">{ item }</Link>   
           )
         } 
-        <button className="xl:flex rounded-sm bg-transparent px-2 text-sm font-medium " onClick={openMenu}>Menu</button>     
+        <button className="xl:flex rounded-sm bg-transparent px-2 text-sm font-medium " onClick={() => openMenu()}>Menu</button>     
     </nav>
   )
 }

@@ -2,7 +2,7 @@ import Wrapper from "./Wrapper";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const Section = ({data}: {data: object}) => {
+const Section = ({data}) => {
     const [imagebg, setImageBg] = useState(0);
     const isNotMobile = global.window && window.innerWidth < 768;
     
