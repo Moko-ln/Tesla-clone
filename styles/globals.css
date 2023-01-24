@@ -31,3 +31,7 @@ section{
     opacity: 1;
     right: 300px;
 }
+
+.nav-link{
+    transition: all 250ms ease-in-out;
+}

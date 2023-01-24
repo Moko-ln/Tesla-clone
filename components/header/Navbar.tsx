@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="hidden gap-5 justify-center w-5/12 xl:flex">
         {
           items.map( (item, idx) => 
-              <Link href={"#"} key={idx+1} className="text-xs px-2 xl:text-xs tracking-tight font-semibold">{ item }</Link>   
+              <Link href={"#"} key={idx+1} className="text-xs py-1 rounded-sm px-4 xl:text-sm tracking-tight font-semibold hover:bg-zinc-400/10 nav-link">{ item }</Link>   
           )
         }      
     </nav>

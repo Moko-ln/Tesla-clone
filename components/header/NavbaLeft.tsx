@@ -5,10 +5,10 @@ const NavbarLeft = ({openMenu}:{openMenu: Function}) => {
     <nav className="hidden gap-5 grow justify-end w-4/12 xl:flex">
         {
           items.map( (item, idx) => 
-              <Link href={"#"+idx} key={idx+1} className="px-2 text-sm font-medium">{ item }</Link>   
+              <Link href={"#"+idx} key={idx+1} className="px-4 py-1 text-sm font-medium hover:bg-zinc-400/10 nav-link">{ item }</Link>   
           )
         } 
-        <button className="xl:flex rounded-sm bg-transparent px-2 text-sm font-medium " onClick={() => openMenu()}>Menu</button>     
+        <button className="xl:flex rounded-sm bg-transparent px-4 py-1 text-sm font-medium hover:bg-zinc-400/10 nav-link" onClick={() => openMenu()}>Menu</button>     
     </nav>
   )
 }
