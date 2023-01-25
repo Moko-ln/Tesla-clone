@@ -6,13 +6,13 @@ import { TfiAngleDown } from 'react-icons/tfi';
 const Wrapper = ({infosCar}) => {
 
     return (
-        <motion.div className="w-full  h-full pt-36 pb-5 flex flex-col justify-between items-center">
+        <motion.div className="w-full  h-full pt-36 pb-5 flex flex-col justify-between items-center" id={infosCar.title}>
             {/* Top */}
             <div 
                 className="overflow-hidden"
             >
                 <motion.h1 
-                    className="text-4xl text-black font-semibold text-center mb-6"
+                    className="text-4xl text-gray-900 font-semibold text-center mb-6"
 
                     initial={{ opacity:0, y: "100%"}}
                     animate={{ opacity:1, y: "0"}}
@@ -51,8 +51,8 @@ const Wrapper = ({infosCar}) => {
                         animate={{ opacity:1, y: "0" }}
                         transition={{ duration: .7, delay:1.1 }}
                     >
-                        { infosCar.btn_bottom && <button className="opacity-75 md:w-64 bg-zinc-800 w-11/12 text-white p-2 rounded-md text-md font-semibold">{infosCar.btn_bottom}</button>}
-                        { infosCar.btn_top && <button className="opacity-75 md:w-64 bg-white w-11/12 text-zinc-600 p-2 rounded-md text-md font-semibold">{infosCar.btn_top}</button>}
+                        { infosCar.btn_bottom && <button className="opacity-75 md:w-64 bg-zinc-800 w-11/12 text-white p-2 rounded-md text-sm font-medium">{infosCar.btn_bottom}</button>}
+                        { infosCar.btn_top && <button className="opacity-75 md:w-64 bg-white w-11/12 text-zinc-600 p-2 rounded-md text-sm font-medium">{infosCar.btn_top}</button>}
                     </motion.div>
                 </div>
                 

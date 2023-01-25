@@ -51,13 +51,13 @@ const data = [
     imgUrl: ["garage.jfif", "garage-mobile.jfif"],
     text: "De l’énergie pour tous vos besoins",
     
-    btn_top: "En savoir plus"
+    btn_bottom: "En savoir plus"
   },
   {
     model: "Accessoires",
     imgUrl: ["charge.jfif", "charge-mobile.jfif"],
     
-    btn_top: "En savoir plus"
+    btn_bottom: "En savoir plus"
   }
 ]
 

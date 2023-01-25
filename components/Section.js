@@ -9,7 +9,7 @@ const Section = ({data}) => {
     useEffect(() => {
         changeBg()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[isNotMobile]);
+    },[]);
 
     const changeBg = () => {
         isNotMobile ? setImageBg(1) : setImageBg(0);
