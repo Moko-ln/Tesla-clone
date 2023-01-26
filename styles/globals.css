@@ -7,7 +7,6 @@ html, body{
     scroll-snap-type: y mandatory;
     position: relative;
 }
-
 section{
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -39,6 +38,15 @@ section:nth-of-type(5) h1{
     font-size: 1.5rem;
     font-weight: 600;
 }
+
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      min-height: -webkit-fill-available;
+    }
+}
+
 @media screen and (max-width: 768px) {
     html, body{
         scroll-snap-align: start;
