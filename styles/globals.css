@@ -5,8 +5,6 @@
 html, body{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     position: relative;
 }
 
@@ -35,4 +33,15 @@ section{
 
 .nav-link{
     transition: all 250ms ease-in-out;
+}
+
+section:nth-of-type(5) h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+    html, body{
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
 }

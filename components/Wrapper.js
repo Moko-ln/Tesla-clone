@@ -6,13 +6,13 @@ import { TfiAngleDown } from 'react-icons/tfi';
 const Wrapper = ({infosCar}) => {
 
     return (
-        <motion.div className="w-full  h-full pt-36 pb-5 flex flex-col justify-between items-center" id={infosCar.title}>
+        <motion.div className=" w-full h-full pt-36 pb-5 flex flex-col justify-between items-center" id={infosCar.title}>
             {/* Top */}
             <div 
                 className="overflow-hidden"
             >
                 <motion.h1 
-                    className="text-4xl text-gray-900 font-semibold text-center mb-6"
+                    className="md:px-10 text-4xl text-gray-900 font-semibold text-center mb-6"
 
                     initial={{ opacity:0, y: "100%"}}
                     animate={{ opacity:1, y: "0"}}
