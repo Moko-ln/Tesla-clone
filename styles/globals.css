@@ -5,7 +5,7 @@
 html, body{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    position: relative;
+    /* position: relative; */
 }
 section{
     scroll-snap-align: start;
