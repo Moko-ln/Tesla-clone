@@ -5,9 +5,6 @@
 html, body{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     position: relative;
 }
 section{
@@ -47,5 +44,12 @@ section:nth-of-type(5) h1{
     body {
       /* The hack for Safari */
       min-height: -webkit-fill-available;
+    }
+}
+
+@media screen and (max-width: 852px) {
+    html, body{
+        scroll-snap-align: start;
+        scroll-snap-stop: normal;
     }
 }
