@@ -14,7 +14,7 @@ export default function Layout({ children }) {
         <main className={montserrat.className} >
           {children}
         </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
