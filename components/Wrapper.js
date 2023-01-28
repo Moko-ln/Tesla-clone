@@ -57,7 +57,6 @@ const Wrapper = ({infosCar}) => {
                 </div>
                 
             </div>
-
             {/* Bottom */}
             <div className="overflow-hidden relative h-20" >
                 <motion.div 
