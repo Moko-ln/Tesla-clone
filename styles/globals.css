@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 html, body{
-    /* scroll-behavior: smooth;
-    scroll-snap-type: y mandatory; */
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
     position: relative;
 }
 section{
-    /* scroll-snap-align: center;
-    scroll-snap-stop: always; */
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 .navbar-hidden{
     transition: all 250ms ease-in-out;
