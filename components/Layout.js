@@ -11,10 +11,10 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
-        <main className={montserrat.className} >
+        <main className={`${montserrat.className} w-screen h-screen snap-y snap-mandatory overflow-scroll`} >
           {children}
         </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

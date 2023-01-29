@@ -16,12 +16,13 @@ const Section = ({data}) => {
     }
     
     return (
-        <motion.section 
-            className="w-full h-screen bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(./${data.imgUrl[imagebg]})` }}
-        >
-            <Wrapper infosCar={data} />
-        </motion.section>
+            <motion.section 
+                className="w-full h-screen bg-cover bg-center bg-no-repeat snap-start"
+                style={{ backgroundImage: `url(./${data.imgUrl[imagebg]})` }}
+            >
+                <Wrapper infosCar={data} />
+            </motion.section>
+        
     )
 }
 
