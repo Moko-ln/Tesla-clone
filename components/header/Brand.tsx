@@ -7,7 +7,7 @@ const Brand = () => {
         window.location.reload();
     }
     return (
-        <div className="brand flex grow w-4/12">
+        <h1 className="w-2/6">
             <Link href="/" onClick={onLoadPage}>
                 <figure>
                     <Image 
@@ -18,8 +18,7 @@ const Brand = () => {
                     />
                 </figure>
             </Link>
-            
-        </div>
+        </h1>
     )
 }
 

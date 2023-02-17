@@ -23,7 +23,7 @@ const Section = ({ data }) => {
     
     return (
             <motion.section 
-                className="w-full h-screen bg-cover bg-center bg-no-repeat"
+                className="w-screen h-screen bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(./${data.imgUrl[mobile ? 1 : 0 ]})` }}
             >
                 <Wrapper infosCar={data} />

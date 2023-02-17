@@ -17,7 +17,7 @@ const Header = () => {
     }
     
     return (
-        <header className="container-fluid w-screen z-50 fixed bg-transparent h-14 flex items-center justify-center">
+        <header className="containe-fluid w-screen z-50 fixed bg-transparent h-14 flex items-center justify-center">
             <div className="w-11/12 flex justify-between items-center h-full">
                 <Brand />
                 <Navbar />
@@ -26,7 +26,6 @@ const Header = () => {
                 {
                     show && <NavbarHidden closeMenu={closeMenu}/>
                 }
-                
             </div>
         </header>
     )

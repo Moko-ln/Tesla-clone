@@ -2,12 +2,17 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="hidden gap-5 justify-center w-5/12 xl:flex">
+    <nav className="grow-[2] w-2/6">
+      <ul className="w-full h-fit flex justify-between">
         {
           items.map( (item, idx) => 
-              <Link href={"#"} key={idx+1} className="text-xs py-1 rounded-sm px-4 xl:text-sm tracking-tight font-semibold hover:bg-zinc-400/10 nav-link">{ item }</Link>   
+          <li key={idx+1} className="nav-item" >
+            <Link href={"#"} className="text-xs xl:text-sm font-semibold">{ item }</Link>   
+          </li>
           )
-        }      
+        }   
+      </ul>
+           
     </nav>
   )
 }

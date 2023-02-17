@@ -10,7 +10,7 @@ const Wrapper = ({infosCar}) => {
             {/* Top */}
             <div className="w-full text-center">
                 <div className="overflow-hidden">
-                    <motion.h1 
+                    <motion.h2 
                         className="md:px-10 text-4xl text-gray-900 font-semibold text-center mb-6"
 
                         initial={{ opacity:0, y: "100%"}}
@@ -18,7 +18,7 @@ const Wrapper = ({infosCar}) => {
                         transition={{ duration: .5, delay:.6}}
                     >
                         {infosCar.model }
-                    </motion.h1>
+                    </motion.h2>
                 </div>
                 <div className="overflow-hidden">
                         <motion.div
@@ -26,14 +26,17 @@ const Wrapper = ({infosCar}) => {
                             animate={{ opacity:1, y: "0" }}
                             transition={{ duration: .7, delay:1.1 }}
                         >
-                            {
-                                (infosCar.text) ?
+                            { infosCar.linktext &&
                                 <Link href="/" className="border-zinc-500 border-b-2 hover:border-zinc-700 text-center"
                                 >
-                                    { infosCar.text }
+                                    { infosCar.linktext }
                                 </Link>
-                                :
-                                ""
+                            } 
+                            { infosCar.text &&
+                                <p className="text-center"
+                                >
+                                    { infosCar.text }
+                                </p>
                             } 
                         </motion.div>
                 </div>
