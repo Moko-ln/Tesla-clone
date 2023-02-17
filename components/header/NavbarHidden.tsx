@@ -5,12 +5,12 @@ import { AiOutlineClose } from 'react-icons/ai';
 const NavbarHidden = ({closeMenu}:{closeMenu: Function}) => {
   
   return (
-    <nav 
+    <motion.nav 
         className="absolute right-0 top-0 h-screen bg-white flex flex-col gap-5 grow justify-start pt-20 w-72 pl-9 navbar-hidden"
 
-        // initial={{ opacity: 0, x: "300px"}}
-        // animate={{ opacity: 1, x: "0"}}
-        // exit={{ opacity: 0, x: "300px"}}
+        initial={{ opacity: 0, x: "300px"}}
+        animate={{ opacity: 1, x: "0"}}
+        exit={{ opacity: 0, x: "300px"}}
     >
         {
           items.map( (item, idx) => 
@@ -18,7 +18,7 @@ const NavbarHidden = ({closeMenu}:{closeMenu: Function}) => {
           )
         } 
         <button className="absolute top-8 right-5 rounded-sm bg-transparent px-2 text-xl font-bold " onClick={() => closeMenu()}><AiOutlineClose /></button>     
-    </nav>
+    </motion.nav>
   )
 }
 

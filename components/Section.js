@@ -2,23 +2,29 @@ import Wrapper from "./Wrapper";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const Section = ({data}) => {
-    const [imagebg, setImageBg] = useState(0);
-    const isNotMobile = global.window && window.innerWidth < 768;
+const Section = ({ data }) => {
+    const [mobile, setMobile] = useState(false);
     
     useEffect(() => {
-        changeBg()
+
+        window.addEventListener("resize", checkIfMobile);
+        checkIfMobile();
+
+        return () => {
+            window.removeEventListener("resize", checkIfMobile);
+        };
+        
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
-    const changeBg = () => {
-        isNotMobile ? setImageBg(1) : setImageBg(0);
+    const checkIfMobile = () => {
+        setMobile(window.innerWidth <= 768);
     }
     
     return (
             <motion.section 
                 className="w-full h-screen bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: `url(./${data.imgUrl[imagebg]})` }}
+                style={{ backgroundImage: `url(./${data.imgUrl[mobile ? 1 : 0 ]})` }}
             >
                 <Wrapper infosCar={data} />
             </motion.section>

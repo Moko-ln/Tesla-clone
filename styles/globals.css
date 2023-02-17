@@ -11,7 +11,7 @@ section{
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
-.navbar-hidden{
+/* .navbar-hidden{
     transition: all 250ms ease-in-out;
 }
 .navbar-hidden::before{
@@ -28,7 +28,7 @@ section{
 .navbar-hidden.active{
     opacity: 1;
     right: 300px;
-}
+} */
 
 .nav-link{
     transition: all 250ms ease-in-out;
