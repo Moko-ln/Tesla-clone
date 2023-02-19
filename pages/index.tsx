@@ -1,4 +1,5 @@
 import Section from "../components/Section";
+
 const HomePage = ( { data }: any ) => {
 
   return (
@@ -17,7 +18,7 @@ export default HomePage;
 
 export async function getStaticProps() {
 
-  const res = await fetch('https://tesla-clone-pxvuyhs42-moko-ln.vercel.app/api/datacar');
+  const res = await fetch('http://localhost:3000/api/datacar');
   
   const { data } = await res.json();
 

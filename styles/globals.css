@@ -2,33 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body{
+*{
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-section{
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
-/* .navbar-hidden{
-    transition: all 250ms ease-in-out;
-}
-.navbar-hidden::before{
-    content: "";
 
-    position: absolute;
-    top: 0;
-    width: 2000px;
-    height: 100%;
-    left: -2000px;
-    backdrop-filter: blur(4px);
-    pointer-events: inherit;
+html, body{
+    height: 100vh;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    scroll-snap-points-y: repeat(100vh);
 }
-.navbar-hidden.active{
-    opacity: 1;
-    right: 300px;
-} */
 /* Header */
 .tds-animate--backdrop-backdrop{
     position: absolute;
@@ -44,7 +31,15 @@ section{
 
 }
 /* Section css  */
-
+section{
+    scroll-snap-align: start;
+    
+    height: 100vh;
+    position: relative;
+}
+footer{
+    display: none !important;
+}
 /* Wrapper css  */
 
 /* Avoid Chrome to see Safari hack */
