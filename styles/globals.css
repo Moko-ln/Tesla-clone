@@ -12,18 +12,17 @@
 html, body{
     scroll-snap-type: y mandatory;
     scroll-snap-points-y: repeat(100vh);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 /* Header */
 /* Section css  */
 section{
-    height: 100vh;
+    /* height: 100vh; */
     scroll-snap-align: center;
 }
 
 /* Footer */
 footer{
-    /* inset-inline-start:0; */
     position: fixed;
     display: block;
 }
