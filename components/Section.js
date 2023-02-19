@@ -4,9 +4,8 @@ import { useEffect, useState } from "react";
 
 const Section = ({ data }) => {
     const [mobile, setMobile] = useState(false);
-    
-    useEffect(() => {
 
+    useEffect(() => {
         window.addEventListener("resize", checkIfMobile);
         checkIfMobile();
 
@@ -23,7 +22,7 @@ const Section = ({ data }) => {
     
     return (
             <motion.section 
-                className="w-screen h-screen bg-cover bg-center bg-no-repeat"
+                className="w-screen h-screen bg-cover bg-center bg-no-repeat flex items-center pt-32"
                 style={{ backgroundImage: `url(./${data.imgUrl[mobile ? 1 : 0 ]})` }}
             >
                 <Wrapper infosCar={data} />

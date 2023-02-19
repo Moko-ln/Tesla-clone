@@ -55,6 +55,5 @@ const data = [
     imgUrl: ["charge.jfif", "charge-mobile.jfif"],
     btn_bottom: "En savoir plus",
   }
-  
 ]
 

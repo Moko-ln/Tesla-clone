@@ -6,7 +6,7 @@ import { TfiAngleDown } from 'react-icons/tfi';
 const Wrapper = ({infosCar}) => {
 
     return (
-        <motion.div className="w-full h-full pt-36 pb-5 flex flex-col justify-between items-center" id={infosCar.title}>
+        <motion.div className="w-full h-full pb-5 flex flex-col justify-between items-center" id={infosCar.title}>
             {/* Top */}
             <div className="w-full text-center">
                 <div className="overflow-hidden">
@@ -57,7 +57,7 @@ const Wrapper = ({infosCar}) => {
                     </motion.div>
                 </div>
                     
-                <div className="overflow-hidden relative h-20" >
+                <div className="overflow-hidden relative" >
                     <motion.div 
                         className="flex flex-col gap-2 items-center h-full"
 
@@ -75,12 +75,12 @@ const Wrapper = ({infosCar}) => {
                             :
                             ""
                         }
-                        {
+                        {/* {
                             (infosCar.icon === true) ?
                             <TfiAngleDown className="animate-bounce text-lg absolute bottom-0 origin-center"/>
                             :
                             ""
-                        } 
+                        }  */}
                     </motion.div>
                 </div> 
             </div>

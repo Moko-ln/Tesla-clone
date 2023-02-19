@@ -10,35 +10,22 @@
 }
 
 html, body{
-    height: 100vh;
-    overflow: hidden;
     scroll-snap-type: y mandatory;
-    overflow: scroll;
     scroll-snap-points-y: repeat(100vh);
+    /* overflow-x: hidden; */
 }
 /* Header */
-.tds-animate--backdrop-backdrop{
-    position: absolute;
-    background: red;
-    transform: translate(-50%, 0%);
-    height: 25px;
-    width: 150px;
-    pointer-events: none;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
-    background: transparent;
-    backdrop-filter: blur(10px);
-    transition: .2s;
-
-}
 /* Section css  */
 section{
-    scroll-snap-align: start;
-    
     height: 100vh;
-    position: relative;
+    scroll-snap-align: center;
 }
+
+/* Footer */
 footer{
-    display: none !important;
+    /* inset-inline-start:0; */
+    position: fixed;
+    display: block;
 }
 /* Wrapper css  */
 
@@ -51,9 +38,8 @@ footer{
 }
 
 @media screen and (max-width: 852px) {
-    html, body{
+    /* html, body{
         scroll-snap-align: start;
         scroll-snap-stop: normal;
-    }
+    } */
 }
-

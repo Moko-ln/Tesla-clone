@@ -1,8 +1,8 @@
 import Header from './partials/Header';
 import Footer from './partials/Footer';
-import { Montserrat } from '@next/font/google';
+import { Poppins } from '@next/font/google';
 
-const montserrat = Montserrat({
+const montserrat = Poppins({
   subsets: ['latin'],
   weight: ['400', '600', '800']
 })
