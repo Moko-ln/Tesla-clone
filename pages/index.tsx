@@ -1,15 +1,15 @@
-import Section from "../components/Section";
+import Article from "../components/Article";
 
 const HomePage = ( { data }: any ) => {
 
   return (
-    <>
+    <div className="overflow-x-hidden snap-y snap-mandatory h-screen w-screen" >
       {
         data.map((item: any, index: number) => 
-          <Section key={index+1} data={item} />
+          <Article key={index+1} data={item} />
         )
       }    
-    </>
+    </div>
   )
 }
 

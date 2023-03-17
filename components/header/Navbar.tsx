@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="grow-[2] w-2/6">
+    <nav className="grow-[2] w-2/6 navbar">
       <ul className="w-full h-fit flex justify-between">
         {
           items.map( (item, idx) => 
@@ -11,8 +11,7 @@ const Navbar = () => {
           </li>
           )
         }   
-      </ul>
-           
+      </ul>        
     </nav>
   )
 }

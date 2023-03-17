@@ -2,7 +2,7 @@ import Wrapper from "./Wrapper";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const Section = ({ data }) => {
+const Article = ({ data }) => {
     const [mobile, setMobile] = useState(false);
 
     useEffect(() => {
@@ -21,14 +21,13 @@ const Section = ({ data }) => {
     }
     
     return (
-            <motion.section 
-                className="w-screen h-screen bg-cover bg-center bg-no-repeat flex items-center pt-32"
-                style={{ backgroundImage: `url(./${data.imgUrl[mobile ? 1 : 0 ]})` }}
-            >
-                <Wrapper infosCar={data} />
-            </motion.section>
-        
+        <motion.article 
+            className="snap-start w-screen h-screen bg-cover bg-center bg-no-repeat flex items-center pt-32"
+            style={{ backgroundImage: `url(./${data.imgUrl[mobile ? 1 : 0 ]})` }}
+        >
+            <Wrapper infosCar={data} />
+        </motion.article>  
     )
 }
 
-export default Section;
+export default Article;

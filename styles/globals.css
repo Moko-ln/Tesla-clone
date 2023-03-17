@@ -9,17 +9,10 @@
     margin: 0;
 }
 
-html, body{
-    scroll-snap-type: y mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    overflow-x: hidden;
-}
+
 /* Header */
 /* Section css  */
-section{
-    /* height: 100vh; */
-    scroll-snap-align: center;
-}
+
 
 /* Footer */
 footer{
@@ -36,9 +29,8 @@ footer{
     }
 }
 
-@media screen and (max-width: 852px) {
-    /* html, body{
-        scroll-snap-align: start;
-        scroll-snap-stop: normal;
-    } */
-}
+@media screen and (max-width: 1024px) {
+    .navbar{
+        display: none;
+    }
+ }
